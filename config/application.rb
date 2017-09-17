@@ -30,7 +30,7 @@ module Lifepins
 
     config.action_dispatch.default_headers = {
       'Access-Control-Allow-Origin' => '*',
-      'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
+      'Access-Control-Request-Method' => %w{GET POST}.join(",")
     }
   end
 end
