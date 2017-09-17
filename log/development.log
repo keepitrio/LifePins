@@ -77,3 +77,64 @@ Migrating to CreatePostings (20170917002341)
   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3521695744520970240)[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "postings" CASCADE[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "postings" ("id" bigserial primary key, "name" character varying NOT NULL, "contact" character varying, "latitude" character varying NOT NULL, "longitude" character varying NOT NULL, "categories" text NOT NULL, "number_of_people" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170917002341)[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-09-17 01:42:16.162538"], ["updated_at", "2017-09-17 01:42:16.162538"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (2.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "postings" CASCADE[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "postings" ("id" bigserial primary key, "name" character varying NOT NULL, "contact" character varying, "latitude" character varying NOT NULL, "longitude" character varying NOT NULL, "categories" text NOT NULL, "number_of_people" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170917002341)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-09-17 01:42:16.214764"], ["updated_at", "2017-09-17 01:42:16.214764"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mPosting Load (0.5ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "postings" ("name", "contact", "latitude", "longitude", "categories", "number_of_people", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Reta Stehr"], ["contact", "721.374.2472"], ["latitude", "37.790862"], ["longitude", "-122.401093"], ["categories", "food"], ["number_of_people", 1], ["created_at", "2017-09-17 01:42:16.727415"], ["updated_at", "2017-09-17 01:42:16.727415"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "postings" ("name", "contact", "latitude", "longitude", "categories", "number_of_people", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Tristin Toy"], ["contact", "(522) 037-1963"], ["latitude", "37.792355"], ["longitude", "-122.402523"], ["categories", "shower"], ["number_of_people", 1], ["created_at", "2017-09-17 01:42:16.730086"], ["updated_at", "2017-09-17 01:42:16.730086"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "postings" ("name", "contact", "latitude", "longitude", "categories", "number_of_people", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Aron Dicki"], ["contact", "(428) 578-9341"], ["latitude", "37.790998"], ["longitude", "-122.403939"], ["categories", "water"], ["number_of_people", 1], ["created_at", "2017-09-17 01:42:16.732192"], ["updated_at", "2017-09-17 01:42:16.732192"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "postings" ("name", "contact", "latitude", "longitude", "categories", "number_of_people", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Mr. Enos O'Connell"], ["contact", "(902) 935-7860"], ["latitude", "37.78993"], ["longitude", "-122.404282"], ["categories", "bed"], ["number_of_people", 2], ["created_at", "2017-09-17 01:42:16.734302"], ["updated_at", "2017-09-17 01:42:16.734302"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "postings" ("name", "contact", "latitude", "longitude", "categories", "number_of_people", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Ora Berge"], ["contact", "625.490.3260"], ["latitude", "37.792236"], ["longitude", "-122.402222"], ["categories", "water"], ["number_of_people", 1], ["created_at", "2017-09-17 01:42:16.736473"], ["updated_at", "2017-09-17 01:42:16.736473"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "postings" ("name", "contact", "latitude", "longitude", "categories", "number_of_people", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Ophelia McKenzie"], ["contact", "861.944.7012"], ["latitude", "37.794389"], ["longitude", "-122.398725"], ["categories", "water"], ["number_of_people", 1], ["created_at", "2017-09-17 01:42:16.738797"], ["updated_at", "2017-09-17 01:42:16.738797"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "postings" ("name", "contact", "latitude", "longitude", "categories", "number_of_people", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Arvilla Farrell DVM"], ["contact", "1-286-315-6514"], ["latitude", "37.789862"], ["longitude", "-122.397544"], ["categories", "shower"], ["number_of_people", 1], ["created_at", "2017-09-17 01:42:16.740849"], ["updated_at", "2017-09-17 01:42:16.740849"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "postings" ("name", "contact", "latitude", "longitude", "categories", "number_of_people", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Carter Feeney IV"], ["contact", "146-860-4040"], ["latitude", "37.78837"], ["longitude", "-122.399926"], ["categories", "shower"], ["number_of_people", 3], ["created_at", "2017-09-17 01:42:16.742897"], ["updated_at", "2017-09-17 01:42:16.742897"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "postings" ("name", "contact", "latitude", "longitude", "categories", "number_of_people", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Ola Koss"], ["contact", "541.111.9162"], ["latitude", "37.788878"], ["longitude", "-122.405097"], ["categories", "shower"], ["number_of_people", 1], ["created_at", "2017-09-17 01:42:16.745372"], ["updated_at", "2017-09-17 01:42:16.745372"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "postings" ("name", "contact", "latitude", "longitude", "categories", "number_of_people", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Jennings Schuster"], ["contact", "669-486-8167"], ["latitude", "37.7911"], ["longitude", "-122.393575"], ["categories", "shower"], ["number_of_people", 3], ["created_at", "2017-09-17 01:42:16.747590"], ["updated_at", "2017-09-17 01:42:16.747590"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT  "postings".* FROM "postings" LIMIT $1[0m  [["LIMIT", 11]]
