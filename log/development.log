@@ -3016,3 +3016,383 @@ Processing by PostingsController#all as */*
 Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/info" for ::1 at 2017-09-17 01:36:29 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.6ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 01:41:02 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (5.1ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 01:41:50 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 01:44:15 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.5ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 01:45:25 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 01:45:46 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (4.6ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 141ms (Views: 135.8ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 01:47:50 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (1.0ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 01:48:13 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.9ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 136ms (Views: 134.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 01:52:08 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 01:52:17 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.5ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 01:52:55 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 01:53:17 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 01:54:27 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.7ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 01:54:56 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 01:55:14 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 01:59:16 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (1.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:10:13 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.5ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:10:55 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:12:28 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:12:39 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:12:46 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:19:44 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 45ms (Views: 29.9ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:20:20 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:22:08 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:33:35 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (1.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:35:43 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (27.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 38ms (Views: 10.6ms | ActiveRecord: 27.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:36:08 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 53ms (Views: 52.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:36:56 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:37:38 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 68ms (Views: 66.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:37:57 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (17.6ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 50ms (Views: 32.6ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:38:25 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 155ms (Views: 154.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:42:10 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:42:42 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:45:56 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:49:05 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.5ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:49:16 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:50:08 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:53:54 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:54:19 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.9ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:54:49 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.8ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:55:42 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:56:33 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.5ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 62ms (Views: 61.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:57:18 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.6ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:58:57 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 59ms (Views: 58.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:59:03 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.6ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 02:59:31 -0700
+Processing by PostingsController#all as HTML
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 03:00:33 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 03:01:47 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 03:04:04 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (1.0ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 37ms (Views: 26.5ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/remove?id=14" for ::1 at 2017-09-17 03:04:35 -0700
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostingsController#delete as */*
+  Parameters: {"id"=>"14"}
+No template found for PostingsController#delete, rendering head :no_content
+Completed 204 No Content in 50ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 03:05:29 -0700
+Started GET "/info" for ::1 at 2017-09-17 03:05:39 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.6ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 27ms (Views: 19.9ms | ActiveRecord: 4.2ms)
+
+
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/remove?id=14" for ::1 at 2017-09-17 03:05:43 -0700
+Processing by PostingsController#delete as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mPosting Load (0.5ms)[0m  [1m[34mSELECT  "postings".* FROM "postings" WHERE "postings"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[31mDELETE FROM "postings" WHERE "postings"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+No template found for PostingsController#delete, rendering head :no_content
+Completed 204 No Content in 113ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 03:05:46 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/remove?id=15" for ::1 at 2017-09-17 03:05:54 -0700
+Processing by PostingsController#delete as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT  "postings".* FROM "postings" WHERE "postings"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "postings" WHERE "postings"."id" = $1[0m  [["id", 15]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+No template found for PostingsController#delete, rendering head :no_content
+Completed 204 No Content in 104ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 03:05:56 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 84ms (Views: 83.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/create?name=rio&contact=111-111-1111&address=5830+Jefferson+Ave+richmond,+ca&categories=shower&number_of_people=1" for ::1 at 2017-09-17 03:06:19 -0700
+Processing by PostingsController#create as HTML
+  Parameters: {"name"=>"rio", "contact"=>"111-111-1111", "address"=>"5830 Jefferson Ave richmond, ca", "categories"=>"shower", "number_of_people"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "postings" ("name", "contact", "latitude", "longitude", "categories", "number_of_people", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "rio"], ["contact", "111-111-1111"], ["latitude", "37.9168353"], ["longitude", "-122.3138674"], ["categories", "shower"], ["number_of_people", 1], ["created_at", "2017-09-17 10:06:20.414799"], ["updated_at", "2017-09-17 10:06:20.414799"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 627ms (Views: 1.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 03:06:22 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.6ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/remove?id=16" for ::1 at 2017-09-17 03:06:26 -0700
+Processing by PostingsController#delete as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT  "postings".* FROM "postings" WHERE "postings"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "postings" WHERE "postings"."id" = $1[0m  [["id", 16]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+No template found for PostingsController#delete, rendering head :no_content
+Completed 204 No Content in 76ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/info" for ::1 at 2017-09-17 03:06:27 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
