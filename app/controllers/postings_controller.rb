@@ -26,4 +26,8 @@ class PostingsController < ApplicationController
         status: 422 }
     end
   end
+
+  def delete
+    Posting.find(params[:id]).destroy!
+  end
 end
