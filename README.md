@@ -1,3 +1,3 @@
 # LifePins-Backend
 
-This is the backend repo for LifePins
+[Front end is here](https://github.com/rnose512/LifePins-Frontend)
