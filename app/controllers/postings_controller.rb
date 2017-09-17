@@ -1,4 +1,6 @@
 class PostingsController < ApplicationController
+  protect_from_forgery with: :null_session
+
   def all
     @postings = Posting.all
     render json: @postings
@@ -6,10 +8,7 @@ class PostingsController < ApplicationController
 
   def create
     coords = Geocoder.coordinates(params[:address])
-    p params
-    @posting = Posting.new(name: params[:name], contact: params[:latitude], latitude: coords[0], longitude: coords[1],categories: params[:categories], number_of_people: params[:number_of_people])
-    p coords
-    p "butts" * 100
+    @posting = Posting.new(name: params[:name], contact: params[:contact], latitude: coords[0], longitude: coords[1],categories: params[:categories], number_of_people: params[:number_of_people])
 
     if @posting.save
       @posting
