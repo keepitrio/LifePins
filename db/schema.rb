@@ -16,23 +16,12 @@ ActiveRecord::Schema.define(version: 20170917002341) do
   enable_extension "plpgsql"
 
   create_table "postings", force: :cascade do |t|
-    t.string "name"
-    t.string "contact"
-    t.string "address"
-    t.text "categories"
-    t.integer "number_of_people"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "users", force: :cascade do |t|
     t.string "name", null: false
     t.string "contact"
     t.string "latitude", null: false
     t.string "longitude", null: false
     t.text "categories", null: false
     t.integer "number_of_people", null: false
-    t.boolean "active", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
