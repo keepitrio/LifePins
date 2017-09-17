@@ -139,3 +139,868 @@ Migrating to CreatePostings (20170917002341)
   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "postings" ("name", "contact", "latitude", "longitude", "categories", "number_of_people", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Jennings Schuster"], ["contact", "669-486-8167"], ["latitude", "37.7911"], ["longitude", "-122.393575"], ["categories", "shower"], ["number_of_people", 3], ["created_at", "2017-09-17 01:42:16.747590"], ["updated_at", "2017-09-17 01:42:16.747590"]]
   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT  "postings".* FROM "postings" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/info" for ::1 at 2017-09-16 21:18:15 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostingsController#all as HTML
+  [1m[36mPosting Load (0.5ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 24ms (Views: 16.3ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/?name=rio&contact=111-1111&address=633+Folsom+St+San+Francisco&dropdownValue=bed&number_of_people=1" for ::1 at 2017-09-16 21:18:38 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"name"=>"rio", "contact"=>"111-1111", "address"=>"633 Folsom St San Francisco", "dropdownValue"=>"bed", "number_of_people"=>"1"}
+  Rendering /Users/rnose/.rvm/gems/ruby-2.3.3/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/rnose/.rvm/gems/ruby-2.3.3/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (5.1ms)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:18:47 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/info" for ::1 at 2017-09-16 21:18:47 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.5ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 201ms (Views: 40.9ms | ActiveRecord: 159.2ms)
+
+
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:18:48 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:18:49 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:18:49 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:18:50 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:18:50 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:18:50 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:19:00 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/info" for ::1 at 2017-09-16 21:19:00 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (20.8ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 27ms (Views: 6.3ms | ActiveRecord: 20.8ms)
+
+
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:19:49 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:19:49 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:19:49 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:20:13 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:20:13 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:20:14 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:20:15 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:20:15 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:20:15 -0700
+  
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:20:18 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:20:18 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:20:18 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/info" for ::1 at 2017-09-16 21:20:57 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.6ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 122ms (Views: 121.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:20:58 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:21:28 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:21:49 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:21:50 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:22:28 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (2.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:22:28 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:22:41 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (37.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 69ms (Views: 31.2ms | ActiveRecord: 37.2ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:23:47 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (3.6ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 33ms (Views: 28.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:23:47 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.7ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:24:07 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:24:10 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:24:22 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.4ms)
+
+
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:24:40 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started OPTIONS "/create" for ::1 at 2017-09-16 21:24:40 -0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/info" for ::1 at 2017-09-16 21:24:41 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (25.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 58ms (Views: 32.8ms | ActiveRecord: 25.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:24:41 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:26:17 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:26:17 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (2.7ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 101ms (Views: 97.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:26:36 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (3.0ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 242ms (Views: 236.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:26:37 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.6ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 116ms (Views: 114.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:26:48 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:27:27 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:27:28 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:27:33 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (3.6ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:27:46 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:28:34 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (1.7ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/info" for ::1 at 2017-09-16 21:28:34 -0700
+Processing by PostingsController#all as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+
+
