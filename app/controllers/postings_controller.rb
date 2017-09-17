@@ -7,16 +7,15 @@ class PostingsController < ApplicationController
   end
 
   def create
+    coords = Geocoder.coordinates(params[:address])
     @posting = Posting.new(
       name: params[:name], 
       contact: params[:contact], 
-      latitude: params[:latitude], 
-      longitude: [:longitude],
+      latitude: coords[0], 
+      longitude: coords[1],
       categories: params[:categories], 
-      number_of_people: params[:numberOfPeople]
+      number_of_people: params[:number_of_people]
     )
-    coords = Geocoder.coordinates(params[:address])
-    @posting = Posting.new(name: params[:name], contact: params[:contact], latitude: coords[0], longitude: coords[1],categories: params[:categories], number_of_people: params[:number_of_people])
 
     if @posting.save
       @posting
