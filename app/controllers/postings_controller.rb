@@ -9,7 +9,7 @@ class PostingsController < ApplicationController
 
     if @posting.save
       @posting
-      render :json @posting
+      render json: @posting
     else
       render :json, { errors: ["Sign up failed!"], status: 422 }
     end
