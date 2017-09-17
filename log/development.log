@@ -77,3 +77,5 @@ Migrating to CreatePostings (20170917002341)
   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3521695744520970240)[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mPosting Load (0.6ms)[0m  [1m[34mSELECT  "postings".* FROM "postings" ORDER BY "postings"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPosting Load (0.9ms)[0m  [1m[34mSELECT  "postings".* FROM "postings" ORDER BY "postings"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
