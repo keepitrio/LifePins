@@ -77,6 +77,7 @@ Migrating to CreatePostings (20170917002341)
   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3521695744520970240)[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
   [1m[35mSQL (1.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
   [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "postings" CASCADE[0m
   [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "postings" ("id" bigserial primary key, "name" character varying NOT NULL, "contact" character varying, "latitude" character varying NOT NULL, "longitude" character varying NOT NULL, "categories" text NOT NULL, "number_of_people" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
