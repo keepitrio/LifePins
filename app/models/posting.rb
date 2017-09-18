@@ -1,0 +1,3 @@
+class Posting < ApplicationRecord
+
+end
