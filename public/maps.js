@@ -2,9 +2,9 @@ window.onload = function() {
 
   L.mapquest.key = 'lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24';
 
-  var sendGetRequest = $.get('https://lifepins-backend.herokuapp.com/index');
+  var sendGetRequest = $.get('/postings');
   var removePosting = function(id){
-    $.get('https://lifepins-backend.herokuapp.com/delete?id=' + id);
+    $.get('/delete?id=' + id);
     window.location.reload();
   }
   var markerGroup = L.layerGroup();
