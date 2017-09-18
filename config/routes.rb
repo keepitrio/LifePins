@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   get '/index' => 'postings#index'
   get '/delete' => 'postings#delete'
 
-  root 'postings#index'
+  resources :static_pages, only: [:index]
+
+  root 'static_pages#index'
 end
