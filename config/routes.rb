@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get '/create' => 'postings#create'
-  get '/info' => 'postings#all'
-  get '/remove' => 'postings#delete'
+  get '/index' => 'postings#index'
+  get '/delete' => 'postings#delete'
 
-  root 'postings#all'
+  root 'postings#index'
 end
