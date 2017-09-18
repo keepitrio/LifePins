@@ -1,4 +1,4 @@
-# AidPins-Backend-API :round_pushpin:
+# LifePins :round_pushpin:
 
 Map app that lets users who need help in the event of disasters find a place where they can get help.
 
@@ -23,7 +23,7 @@ People who can provide help can place their location on the map and provide info
 
 ## Things we covered on this project:
 
-- Ruby on Rails [Backend API](https://github.com/rnose512/LifePins-Backend)
+- Ruby on Rails
 - React
 - JavaScript
 - jQuery
