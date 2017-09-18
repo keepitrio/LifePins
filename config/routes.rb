@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get '/create' => 'postings#create'
   get '/info' => 'postings#all'
   get '/remove' => 'postings#delete'
+
+  root 'postings#all'
 end
