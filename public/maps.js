@@ -4,8 +4,11 @@ window.onload = function() {
 
   var sendGetRequest = $.get('/postings');
   var removePosting = function(id){
-    $.get('/postings?id=' + id);
-    window.location.reload();
+    $.get('/delete?id=' + id, {
+      success: function() {
+        window.location.reload();    
+      }
+    });
   }
   var markerGroup = L.layerGroup();
 
