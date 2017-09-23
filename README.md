@@ -1,4 +1,4 @@
-# AidPins-Backend-API :round_pushpin:
+# lifepins-Backend-API :round_pushpin:
 
 [Front end is here](https://github.com/rnose512/LifePins-Frontend)
 

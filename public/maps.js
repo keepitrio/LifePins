@@ -4,7 +4,7 @@ window.onload = function() {
 
   var sendGetRequest = $.get('/postings');
   var removePosting = function(id){
-    $.get('/delete?id=' + id);
+    $.get('/postings?id=' + id);
     window.location.reload();
   }
   var markerGroup = L.layerGroup();
