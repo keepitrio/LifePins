@@ -1,7 +1,7 @@
 class PostingsController < ApplicationController
   protect_from_forgery with: :null_session
 
-  def all
+  def index
     @postings = Posting.all
     render json: @postings
   end
