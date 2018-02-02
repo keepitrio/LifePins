@@ -40,11 +40,20 @@ window.onload = function() {
     alert("error")
   });
 
+  let lat, long;
+
+  navigator.geolocation.getCurrentPosition(function(location) {
+    let coords = location.coords;
+    lat = coords.latitude, long = coords.latitude;
+  })
+  
+
   var map = L.mapquest.map('map', {
-    center: [28.71227, -81.325607],
+    center: [12, 35],
     layers: L.mapquest.tileLayer('map'),
     zoom: 12
   });
 
+  console.log(map);
   map.addControl(L.mapquest.control());
 }
