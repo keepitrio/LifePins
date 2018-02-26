@@ -30,7 +30,8 @@ window.onload = function() {
                   'Can provide: ' + markers[i]["categories"] + '<br/>' +
                   'Can accommodate: ' + markers[i]["number_of_people"] + '<br/>' +
                   'Contact: ' + markers[i]["contact"] + '<br/>' +
-                  '<input id="clickMe" type="button" value="Click here if no longer available" onclick="L.thorsten.removePosting(' + markerId +');">')
+                  '<input id="clickMe" type="button" value="Click here if no longer available" onclick="L.thorsten.removePosting(' + markerId +');">' + "<br/>" +
+                  '<input id="touchMe" type="text" value="Text your lifepin!">')
       .addTo(map)
       .addTo(markerGroup);
     }
@@ -42,18 +43,18 @@ window.onload = function() {
 
   let lat, long;
 
-  navigator.geolocation.getCurrentPosition(function(location) {
-    let coords = location.coords;
-    lat = coords.latitude, long = coords.latitude;
-  })
+  fetch('https:ipapi.co/json').then(response => response.json()).then(response => {
+    lat = response.latitude;
+    long = response.longitude;
+  })  
   
-
+  console.log(lat, long);
   var map = L.mapquest.map('map', {
-    center: [12, 35],
+    center: [28.502979, -81.100731],
     layers: L.mapquest.tileLayer('map'),
     zoom: 12
   });
 
-  console.log(map);
+
   map.addControl(L.mapquest.control());
 }
