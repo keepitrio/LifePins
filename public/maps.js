@@ -1,5 +1,4 @@
 window.onload = function() {
-  let lat, lng;
   L.mapquest.key = 'lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24';
 
   var sendGetRequest = $.get('/postings');
@@ -65,9 +64,8 @@ window.onload = function() {
   })
 
   fetch('https://ipapi.co/json').then(response => response.json()).then(response => {
-    lat = response.latitude;
-    lng = response.longitude;
-    map.panTo([lat, lng], 12);
+    const {latitude, longitude} = response;
+    map.panTo([latitude, longitude], 12);
   });
   
 
