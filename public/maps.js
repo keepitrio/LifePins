@@ -1,5 +1,5 @@
 window.onload = function() {
-
+  let lat, lng;
   L.mapquest.key = 'lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24';
 
   var sendGetRequest = $.get('/postings');
@@ -62,7 +62,14 @@ window.onload = function() {
     center: [28.502979, -81.100731],
     layers: L.mapquest.tileLayer('map'),
     zoom: 12
-  }).panTo(new L.LatLng(40.737, -73.923));
+  })
+
+  fetch('https://ipapi.co/json').then(response => response.json()).then(response => {
+    lat = response.latitude;
+    lng = response.longitude;
+    map.panTo([lat, lng], 12);
+  });
+  
 
   map.addControl(L.mapquest.control());
 }
