@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get '/create' => 'postings#create'
   get '/postings' => 'postings#index'
   get '/delete' => 'postings#delete'
-  get '/text' => 'sms#text'
+  post '/text' => 'sms#text'
 
   resources :static_pages, only: [:index]
 
