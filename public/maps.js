@@ -45,7 +45,7 @@ window.onload = function() {
     var data = $(e.target).serializeArray();
     var message = data[0].value;
     var phoneNumber = data[1].value;
-    var preProcessed = "+" + phoneNumber.replace(/[\-]/g, "")
+    var preProcessed = "+" + phoneNumber.replace(/[\-\.]/g, "");
     var sendPostRequest = $.post('/text?phone_number=' + preProcessed + "&message=" + message);
     sendPostRequest.done((response) => {
       form.replaceWith(response.message);
@@ -62,8 +62,7 @@ window.onload = function() {
     center: [28.502979, -81.100731],
     layers: L.mapquest.tileLayer('map'),
     zoom: 12
-  });
-
+  }).panTo(new L.LatLng(40.737, -73.923));
 
   map.addControl(L.mapquest.control());
 }
