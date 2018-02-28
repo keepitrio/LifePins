@@ -2,7 +2,7 @@ class TwilioTextMessenger
   attr_reader :message
 
   def initialize(message)
-    @message = message
+    @message = "Lifepins: " + message
   end
 
   def call(phone_number)
