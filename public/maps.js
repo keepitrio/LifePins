@@ -27,12 +27,12 @@ window.onload = function() {
           size: 'md'
         }),
         draggable: false
-      }).bindPopup(markers[i]["name"] + '’s LifePin' + '<br/>' +
-                  'Can provide: ' + markers[i]["categories"] + '<br/>' +
+      }).bindPopup('<div class="host-name">' + markers[i]["name"] + '’s LifePin' + '</div>' +
+                  '<div class="pin-info">Can provide: ' + markers[i]["categories"] + '<br/>' +
                   'Can accommodate: ' + markers[i]["number_of_people"] + '<br/>' +
-                  'Contact: ' + markers[i]["contact"] + '<br/>' +
-                  '<form class="sms">Text ' + markers[i]["name"] + ':<br/><input class="touchMe" name="message" value="One person coming to your location." type="text"><input type="hidden" name="phone number" value=' + markerContact + '><input type="submit" value="Send message"></form>' + "<br/>" +
-                  '<input id="clickMe" type="button" value="Click here if LifePin no longer available" onclick="L.thorsten.removePosting(' + markerId +');">')
+                  'Contact: ' + markers[i]["contact"] + '</div>' +
+                  '<form class="sms">Text ' + markers[i]["name"] + ':<br/><textarea rows="3" class="touchMe" name="message">One person coming to your location.</textarea><input type="hidden" name="phone number" value=' + markerContact + '><input class="send-text" type="submit" value="Send"></form>' + "<br/>" +
+                  '<input id="clickMe" type="button" value="Delete this LifePin" onclick="L.thorsten.removePosting(' + markerId +');">')
       .addTo(map)
       .addTo(markerGroup);
     }
