@@ -48,7 +48,6 @@ window.onload = function() {
     var sendPostRequest = $.post('/text?phone_number=' + preProcessed + "&message=" + message);
     sendPostRequest.done((response) => {
       form.replaceWith(response.message);
-      debugger;
     });
     sendPostRequest.fail((error) => form.replaceWith(error.message));
   });
