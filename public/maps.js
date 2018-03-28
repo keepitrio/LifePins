@@ -5,7 +5,7 @@ window.onload = function() {
   var removePosting = function(id){
     $.get('/delete?id=' + id, {
       success: function() {
-        window.location.reload();    
+        window.location.reload();
       }
     });
   }
@@ -27,12 +27,12 @@ window.onload = function() {
           size: 'md'
         }),
         draggable: false
-      }).bindPopup('Name: ' + markers[i]["name"] + '<br/>' +
-                  'Can provide: ' + markers[i]["categories"] + '<br/>' +
+      }).bindPopup('<div class="host-name">' + markers[i]["name"] + '’s LifePin' + '</div>' +
+                  '<div class="pin-info">Can provide: ' + markers[i]["categories"] + '<br/>' +
                   'Can accommodate: ' + markers[i]["number_of_people"] + '<br/>' +
-                  'Contact: ' + markers[i]["contact"] + '<br/>' +
-                  '<input id="clickMe" type="button" value="Click here if no longer available" onclick="L.thorsten.removePosting(' + markerId +');">' + "<br/>" +
-                  '<form class="sms"><input class="touchMe" name="message" placeholder="Text your Lifepin!" type="text"><input type="hidden" name="phone number" value=' + markerContact + '><input type="submit" value="Submit"></form>')
+                  'Contact: ' + markers[i]["contact"] + '</div>' +
+                  '<form class="sms">Text ' + markers[i]["name"] + ':<br/><textarea rows="3" class="touchMe" name="message">One person coming to your location.</textarea><input type="hidden" name="phone number" value=' + markerContact + '><input class="send-text" type="submit" value="Send"></form>' + "<br/>" +
+                  '<input id="clickMe" type="button" value="Delete this LifePin" onclick="L.thorsten.removePosting(' + markerId +');">')
       .addTo(map)
       .addTo(markerGroup);
     }
@@ -48,15 +48,14 @@ window.onload = function() {
     var sendPostRequest = $.post('/text?phone_number=' + preProcessed + "&message=" + message);
     sendPostRequest.done((response) => {
       form.replaceWith(response.message);
-      debugger;
     });
-    sendPostRequest.fail((error) => form.replaceWith(error.message)); 
+    sendPostRequest.fail((error) => form.replaceWith(error.message));
   });
 
   sendGetRequest.fail(function(response) {
     alert("error")
-  }); 
-  
+  });
+
   var map = L.mapquest.map('map', {
     center: [28.502979, -81.100731],
     layers: L.mapquest.tileLayer('map'),
@@ -67,7 +66,7 @@ window.onload = function() {
     const {latitude, longitude} = response;
     map.panTo([latitude, longitude], 12);
   });
-  
+
 
   map.addControl(L.mapquest.control());
 }
